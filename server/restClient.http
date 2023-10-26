@@ -1,0 +1,31 @@
+
+//get all data
+GET http://localhost:5000/user/get/all
+###
+
+//get specific data
+GET http://localhost:5000/user/get/2
+###
+
+//insert single value to user table
+POST http://localhost:5000/user/post 
+Content-Type: application/json
+
+{
+    "username": "Randy", 
+    "password": "007"
+}
+###
+
+//update single value to the user table 
+PUT http://localhost:5000/user/put/3
+Content-Type: application/json
+
+{
+    "password": "Randy@007"
+}
+###
+
+//delete single value to the user table 
+DELETE http://localhost:5000/user/delete/3
+###
